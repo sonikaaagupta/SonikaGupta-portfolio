@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonika Gupta — UI/UX Designer &amp; Developer</title>
+<meta name="description" content="Portfolio of Sonika Gupta, UI/UX Designer &amp;  Developer in Pune, India — case studies, skills, and projects in Figma, React and design systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-tag" id="cursorTag"><span class="dot"></span>Sonika · UI/UX Designer & Developer</div>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <nav class="nav">
+    <a href="#home" class="nav-logo"><span class="sq"></span> SG — Portfolio</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+  </nav>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy" data-reveal>
+        <span class="eyebrow">Frame — Home / Portfolio 2026</span>
+        <h1>Hey, I'm<br>Sonika Gupta<span class="accent-word">.</span></h1>
+        <p class="hero-role">UI/UX Designer <span class="divider">/</span> Developer <span class="divider">/</span> Pune, India</p>
+        <p class="hero-desc">I design interfaces in Figma and ship them in HTML, React and Tailwind — turning research and wireframes into responsive products people actually enjoy using.</p>
+        <div class="hero-actions">
+          <a href="#case-studies" class="btn btn-primary">View Case Studies →</a>
+          <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>4+</strong><span>Years Experience</span></div>
+          <div><strong>10+</strong><span>Products Designed</span></div>
+          <div><strong>2</strong><span>Design → Code Stacks</span></div>
+        </div>
+      </div>
+      <div class="hero-board" aria-hidden="true">
+        <div class="board-bar"><span class="chip"></span><span class="chip"></span><span class="chip"></span>&nbsp;Artboard — Hero.fig</div>
+        <div class="board-body">
+          <span class="tick t1">01 — Nav</span>
+          <span class="tick t2">02 — Grid</span>
+          <div class="layer l1"></div>
+          <div class="layer l2"></div>
+          <div class="layer l3"></div>
+          <div class="layer l4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Frame — About</span>
+      <h2>Background &amp; design philosophy</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo" data-reveal>
+        <span class="monogram">SG</span>
+        <div class="badge"><span>Sonika Gupta</span><span>Pune, IN</span></div>
+      </div>
+      <div class="about-copy" data-reveal>
+        <p>I'm a dedicated, detail-oriented UI/UX Designer and Frontend Developer with 4+ years of experience creating user-friendly web solutions — from first sketch to shipped interface.</p>
+        <p>I design in Figma and Adobe Photoshop, then build what I design with HTML5, CSS3, JavaScript, Bootstrap and React.js, Redux and Tailwind CSS — so nothing gets lost in handoff, because I'm usually the one doing both sides of it.</p>
+        <p>I care about balancing creativity with function: a screen should look considered and still hold up under real usage — clear hierarchy, accessible contrast, and layouts that don't fall apart on a small screen. I'm always learning, staying current with design and frontend trends so the work stays sharp.</p>
+        <div class="philosophy">"Good art is a talent. Good design is a skill." — a principle I design by: craft over chance.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="case-studies" class="on-dark">
+  <div class="canvas-bg"></div>
+  <div class="wrap" style="position:relative;">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Frame — Case Studies</span>
+      <h2>Selected work, in depth</h2>
+      <p class="lede">Three projects, unpacked the way I actually work them: problem, research, decisions, mockup, outcome.</p>
+    </div>
+
+    <!-- Case 1: Orgbeauty -->
+    <article class="case" data-reveal>
+      <div class="case-board">
+        <div class="board-bar"><span class="name">Orgbeauty.fig</span><span>HTML · CSS · JS ·Bootstrap</span></div>
+        <img src="img/orgbeauty-1.jpg" alt="Orgbeauty — a responsive e-commerce site" class="case-thumb">
+        <!-- <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="400" height="40" fill="#1c1e2b" stroke="#2a2c3d"/>
+          <circle cx="24" cy="20" r="4" fill="#ffb627"/>
+          <rect x="46" y="14" width="60" height="12" rx="3" fill="#33354a"/>
+          <rect x="300" y="12" width="80" height="16" rx="8" fill="#6ee7b7" opacity="0.5"/>
+          <rect x="20" y="60" width="360" height="90" rx="6" fill="#242637" stroke="#33354a"/>
+          <rect x="36" y="76" width="120" height="14" rx="3" fill="#ffb627" opacity="0.6"/>
+          <rect x="36" y="100" width="200" height="8" rx="3" fill="#40425a"/>
+          <rect x="36" y="116" width="140" height="8" rx="3" fill="#40425a"/>
+          <rect x="20" y="164" width="112" height="120" rx="6" fill="#242637" stroke="#33354a"/>
+          <rect x="144" y="164" width="112" height="120" rx="6" fill="#242637" stroke="#33354a"/>
+          <rect x="268" y="164" width="112" height="120" rx="6" fill="#242637" stroke="#33354a"/>
+          <rect x="34" y="176" width="84" height="70" rx="4" fill="#33354a"/>
+          <rect x="158" y="176" width="84" height="70" rx="4" fill="#33354a"/>
+          <rect x="282" y="176" width="84" height="70" rx="4" fill="#33354a"/>
+          <rect x="34" y="256" width="60" height="8" rx="3" fill="#6ee7b7" opacity="0.7"/>
+          <rect x="158" y="256" width="60" height="8" rx="3" fill="#6ee7b7" opacity="0.7"/>
+          <rect x="282" y="256" width="60" height="8" rx="3" fill="#6ee7b7" opacity="0.7"/>
+        </svg> -->
+      </div>
+      <div class="case-info">
+        <span class="case-kicker">01 — E-commerce · Personal project</span>
+        <h3>Orgbeauty — a premium skincare experience</h3>
+        <p class="case-role">Role: UI/UX Design &amp; Frontend Build · Figma → HTML · CSS · JS ·Bootstrap</p>
+        <div class="case-stages">
+          <div class="stage"><span class="stage-label">Problem</span><span class="stage-body">Most template shopping UIs feel transactional and generic — they don't hold up next to how luxury brands present themselves elsewhere.</span></div>
+          <div class="stage"><span class="stage-label">Research</span><span class="stage-body">Audited luxury retail sites (Sephora, Dior, Chanel, Gucci).
+Observed consistent use of dark editorial photography, restrained typography, and generous whitespace.</span></div>
+          <div class="stage"><span class="stage-label">Decisions</span><span class="stage-body">Designed a dark luxury theme with a refined type scale, generous whitespace, and a curated product grid over a dense catalogue layout.</span></div>
+          <div class="stage"><span class="stage-label">Mockup</span><span class="stage-body">Built the full moodboard and screens in Figma and Photoshop, then implemented the interface in React with Redux Toolkit managing cart and product state.</span></div>
+          <div class="stage"><span class="stage-label">Result</span><span class="stage-body">A cohesive, boutique-feeling shopping flow — from static mockup to a working cart — delivered as a self-contained downloadable build.</span></div>
+        </div>
+        <div class="case-tools"><span>Figma</span><span>Photoshop</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div>
+        <div  style="display: flex; justify-content: space-between;">
+          <a class="case-link" href="https://orgbeauty-bysonika.netlify.app/" target="_blank" rel="noopener">View live demo →</a>
+          <a class="case-link "  href="https://www.figma.com/design/7Q4EwN2DxnAdVLvYWSDe9T/Orgbeauty?node-id=0-1&t=9LtxgR0QSJaVlCVo-1" target="_blank" rel="noopener">View Design on Figma →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Case 2: E-Mart -->
+    <article class="case" data-reveal>
+      <div class="case-board">
+        <div class="board-bar"><span class="name">E-Mart.fig</span><span>HTML · CSS · JS ·Bootstrap</span></div>
+        <img src="img/emart_laptop_mockup2 (1).png" alt="E-Mart responsive marketplace mockup" class="case-mockup" />
+        <!-- <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="400" height="46" fill="#1c1e2b" stroke="#2a2c3d"/>
+          <rect x="20" y="16" width="70" height="14" rx="3" fill="#ffb627" opacity="0.7"/>
+          <rect x="110" y="18" width="40" height="10" rx="3" fill="#40425a"/>
+          <rect x="160" y="18" width="40" height="10" rx="3" fill="#40425a"/>
+          <rect x="210" y="18" width="40" height="10" rx="3" fill="#40425a"/>
+          <rect x="330" y="14" width="50" height="18" rx="9" fill="#33354a"/>
+          <rect x="20" y="64" width="360" height="60" rx="6" fill="#242637" stroke="#33354a"/>
+          <rect x="36" y="82" width="160" height="10" rx="3" fill="#6ee7b7" opacity="0.6"/>
+          <rect x="36" y="100" width="220" height="8" rx="3" fill="#40425a"/>
+          <g>
+            <rect x="20" y="138" width="82" height="106" rx="6" fill="#242637" stroke="#33354a"/>
+            <rect x="112" y="138" width="82" height="106" rx="6" fill="#242637" stroke="#33354a"/>
+            <rect x="204" y="138" width="82" height="106" rx="6" fill="#242637" stroke="#33354a"/>
+            <rect x="296" y="138" width="84" height="106" rx="6" fill="#242637" stroke="#33354a"/>
+          </g>
+          <rect x="32" y="150" width="58" height="54" rx="4" fill="#33354a"/>
+          <rect x="124" y="150" width="58" height="54" rx="4" fill="#33354a"/>
+          <rect x="216" y="150" width="58" height="54" rx="4" fill="#33354a"/>
+          <rect x="308" y="150" width="58" height="54" rx="4" fill="#33354a"/>
+          <rect x="32" y="212" width="44" height="8" rx="3" fill="#ffb627" opacity="0.7"/>
+          <rect x="124" y="212" width="44" height="8" rx="3" fill="#ffb627" opacity="0.7"/>
+          <rect x="216" y="212" width="44" height="8" rx="3" fill="#ffb627" opacity="0.7"/>
+          <rect x="308" y="212" width="44" height="8" rx="3" fill="#ffb627" opacity="0.7"/>
+        </svg> -->
+      </div>
+      <div class="case-info">
+        <span class="case-kicker">02 — E-commerce · Personal project</span>
+        <h3>E-Mart — a responsive marketplace</h3>
+        <p class="case-role">Role: UI/UX Design &amp; Frontend Build · Figma → HTML5/CSS3/Bootstrap</p>
+        <div class="case-stages">
+          <div class="stage"><span class="stage-label">Problem</span><span class="stage-body">A general marketplace needs to turn casual browsing into purchases across very different screen sizes, without the layout feeling like an afterthought on mobile.</span></div>
+          <div class="stage"><span class="stage-label">Research</span><span class="stage-body">Reviewed navigation and filtering patterns on mainstream marketplaces to see what made scanning many products fast and low-friction.</span></div>
+          <div class="stage"><span class="stage-label">Decisions</span><span class="stage-body">Chose a consistent card grid, a sticky category nav, and a Bootstrap 5 breakpoint system so the layout reflows cleanly rather than just shrinking.</span></div>
+          <div class="stage"><span class="stage-label">Mockup</span><span class="stage-body">Designed every page in Figma and Photoshop, then converted the designs into HTML5, CSS3, JavaScript and Bootstrap 5.</span></div>
+          <div class="stage"><span class="stage-label">Result</span><span class="stage-body">A fully responsive storefront that holds its layout and legibility from desktop down to mobile.</span></div>
+        </div>
+        <div class="case-tools"><span>Figma</span><span>Photoshop</span><span>HTML5</span><span>Bootstrap 5</span></div>
+        <a class="case-link" href="https://github.com/sonikaaagupta/E-mart" target="_blank" rel="noopener">View repository on GitHub →</a>
+      </div>
+    </article>
+
+    <!-- Case 3: Montis Store Dashboard -->
+    <article class="case" data-reveal>
+      <div class="case-board">
+        <div class="board-bar"><span class="name">Montis-Dashboard.fig</span><span>Web + Mobile</span></div>
+        <img src="img/luxe_premium.jpg" alt="Montis Store Dashboard mockup" class="case-mockup" />
+        <!-- <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="110" height="300" fill="#1c1e2b" stroke="#2a2c3d"/>
+          <rect x="18" y="24" width="70" height="12" rx="3" fill="#ffb627" opacity="0.7"/>
+          <rect x="18" y="60" width="74" height="8" rx="3" fill="#40425a"/>
+          <rect x="18" y="82" width="74" height="8" rx="3" fill="#40425a"/>
+          <rect x="18" y="104" width="74" height="8" rx="3" fill="#6ee7b7" opacity="0.6"/>
+          <rect x="18" y="126" width="74" height="8" rx="3" fill="#40425a"/>
+          <rect x="126" y="20" width="120" height="70" rx="6" fill="#242637" stroke="#33354a"/>
+          <rect x="256" y="20" width="124" height="70" rx="6" fill="#242637" stroke="#33354a"/>
+          <rect x="140" y="36" width="60" height="8" rx="3" fill="#40425a"/>
+          <rect x="140" y="54" width="90" height="14" rx="3" fill="#ffb627" opacity="0.7"/>
+          <rect x="270" y="36" width="60" height="8" rx="3" fill="#40425a"/>
+          <rect x="270" y="54" width="90" height="14" rx="3" fill="#6ee7b7" opacity="0.7"/>
+          <rect x="126" y="104" width="254" height="130" rx="6" fill="#242637" stroke="#33354a"/>
+          <polyline points="140,200 175,170 210,190 245,140 280,160 315,120 360,150" fill="none" stroke="#6ee7b7" stroke-width="3"/>
+          <rect x="126" y="248" width="120" height="36" rx="6" fill="#242637" stroke="#33354a"/>
+          <rect x="256" y="248" width="124" height="36" rx="6" fill="#242637" stroke="#33354a"/>
+        </svg> -->
+      </div>
+      <div class="case-info">
+        <span class="case-kicker">03 — Dashboard · Personal project</span>
+        <h3>Montis Store Dashboard — one dashboard, every device</h3>
+        <p class="case-role">Role: UI/UX Design &amp; Frontend Build · Figma → React + Redux</p>
+        <div class="case-stages">
+          <div class="stage"><span class="stage-label">Problem</span><span class="stage-body">Store owners need to check performance on the go, but building a separate mobile app for a dashboard isn't realistic for a small store.</span></div>
+          <div class="stage"><span class="stage-label">Research</span><span class="stage-body">Looked at how dashboard UX trades off data density against scannability, and where that trade-off breaks down on a small screen.</span></div>
+          <div class="stage"><span class="stage-label">Decisions</span><span class="stage-body">Used a modular card layout with consistent iconography so panels can reflow and restack instead of needing a separate mobile design.</span></div>
+          <div class="stage"><span class="stage-label">Mockup</span><span class="stage-body">Designed both the web and mobile dashboard views in Figma and Photoshop, then implemented with HTML5, CSS3, JavaScript and Bootstrap 5.</span></div>
+          <div class="stage"><span class="stage-label">Result</span><span class="stage-body">A single dashboard that adapts to desktop and mobile contexts without a second, parallel build.</span></div>
+        </div>
+        <div class="case-tools"><span>Figma</span><span>Photoshop</span><span>Bootstrap 5</span><span>Responsive Design</span></div>
+        <a class="case-link" href="https://www.figma.com/design/ZzePjRc1ASd3Cas9memb3U/dashboard" target="_blank" rel="noopener">View design file on Figma →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Frame — Skills &amp; Tools</span>
+      <h2>What's in the toolbox</h2>
+      <p class="lede">Grouped the way I actually use them day to day — design, build, and the practices that connect the two.</p>
+    </div>
+    <div class="skills-groups" data-reveal>
+      <div class="skill-card">
+        <span class="skill-card-label">// Design</span>
+        <h3>Design &amp; Visuals</h3>
+        <ul class="skill-list">
+          <li class="skill-row"><span class="top"><span>Figma</span><span>Everyday</span></span><div class="bar-track"><div class="bar-fill" data-fill="95"></div></div></li>
+          <li class="skill-row"><span class="top"><span>Adobe Photoshop</span><span>Everyday</span></span><div class="bar-track"><div class="bar-fill" data-fill="90"></div></div></li>
+          <li class="skill-row"><span class="top"><span>Adobe Illustrator</span><span>Frequent</span></span><div class="bar-track"><div class="bar-fill" data-fill="75"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="skill-card-label">// Development</span>
+        <h3>Frontend Build</h3>
+        <ul class="skill-list">
+          <li class="skill-row"><span class="top"><span>HTML5 &amp; CSS3</span><span>Everyday</span></span><div class="bar-track"><div class="bar-fill" data-fill="95"></div></div></li>
+          <li class="skill-row"><span class="top"><span>React.js &amp; Redux</span><span>Frequent</span></span><div class="bar-track"><div class="bar-fill" data-fill="85"></div></div></li>
+          <li class="skill-row"><span class="top"><span>JavaScript</span><span>Frequent</span></span><div class="bar-track"><div class="bar-fill" data-fill="82"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="skill-card-label">// Practice</span>
+        <h3>Systems &amp; Craft</h3>
+        <ul class="skill-list">
+          <li class="skill-row"><span class="top"><span>Responsive Web Design</span><span>Everyday</span></span><div class="bar-track"><div class="bar-fill" data-fill="95"></div></div></li>
+          <li class="skill-row"><span class="top"><span>Tailwind CSS / Bootstrap</span><span>Frequent</span></span><div class="bar-track"><div class="bar-fill" data-fill="85"></div></div></li>
+          <li class="skill-row"><span class="top"><span>TypeScript</span><span>Familiar</span></span><div class="bar-track"><div class="bar-fill" data-fill="60"></div></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="skill-tags" data-reveal-stagger>
+      <span class="tag">Design Systems</span>
+      <span class="tag">Component Libraries</span>
+      <span class="tag">Wireframing</span>
+      <span class="tag">Prototyping</span>
+      <span class="tag">Design Tokens</span>
+      <span class="tag">Cross-browser Testing</span>
+      <span class="tag">Git &amp; GitHub</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS GALLERY -->
+<section id="projects" class="on-dark">
+  <div class="canvas-bg"></div>
+  <div class="wrap" style="position:relative;">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Frame — Projects Gallery</span>
+      <h2>More from the workbench</h2>
+      <p class="lede">Smaller builds and explorations — visual range beyond the three deep-dive case studies above.</p>
+    </div>
+    <div class="gallery-grid" data-reveal-stagger>
+      <div class="gcard">
+        <div class="gthumb">
+          <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="150" fill="#242637"/><rect x="18" y="18" width="264" height="34" rx="5" fill="#33354a"/><rect x="18" y="64" width="120" height="68" rx="5" fill="#40425a"/><rect x="150" y="64" width="132" height="68" rx="5" fill="#40425a"/><circle cx="60" cy="98" r="16" fill="#6ee7b7" opacity="0.5"/></svg>
+        </div>
+        <div class="gbody">
+          <h4>Organic Beauty Product</h4>
+          <p>Product showcase site for organic skincare — natural palette, clean typography, fully responsive.</p>
+          <a class="glink" href="https://github.com/sonikaaagupta/organic-beauty-product" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="gcard">
+        <div class="gthumb">
+          <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="150" fill="#242637"/><rect x="18" y="18" width="264" height="20" rx="5" fill="#33354a"/><rect x="18" y="48" width="84" height="84" rx="5" fill="#40425a"/><rect x="112" y="48" width="84" height="40" rx="5" fill="#40425a"/><rect x="206" y="48" width="76" height="40" rx="5" fill="#ffb627" opacity="0.4"/><rect x="112" y="96" width="170" height="36" rx="5" fill="#40425a"/></svg>
+        </div>
+        <div class="gbody">
+          <h4>Juicy Web Application</h4>
+          <p>Software marketing site converted from Photoshop and Figma layouts into HTML5, CSS3 and jQuery.</p>
+          <a class="glink" href="https://www.figma.com/design/Nf35t957rAkMsG6EgVPeJL/juicy-web-layout-final" target="_blank" rel="noopener">Figma ↗</a>
+        </div>
+      </div>
+      <div class="gcard">
+        <div class="gthumb">
+          <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="150" fill="#242637"/><rect x="18" y="18" width="130" height="114" rx="5" fill="#40425a"/><rect x="160" y="18" width="122" height="52" rx="5" fill="#40425a"/><rect x="160" y="80" width="122" height="52" rx="5" fill="#6ee7b7" opacity="0.35"/></svg>
+        </div>
+        <div class="gbody">
+          <h4>Dr. Preeti Global University Portal</h4>
+          <p>A university web portal built as a portfolio piece — clear information architecture for students and staff.</p>
+          <span class="glink" style="color:var(--slate);">Case study on request ↗</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Frame — Testimonials</span>
+      <h2>What people say</h2>
+      <p class="lede">Placeholder slots below — swap in real quotes from mentors, clients or teammates.</p>
+    </div>
+    <div class="testi-grid" data-reveal-stagger>
+      <div class="testi-card">
+        <span class="quote-mark">"</span>
+        <p class="quote">Add a short quote here about working with Sonika — what stood out about the collaboration or the outcome.</p>
+        <div class="who"><span class="avatar"></span><div><strong>Name, Role</strong><span>Company</span></div></div>
+      </div>
+      <div class="testi-card">
+        <span class="quote-mark">"</span>
+        <p class="quote">Add a second quote here — from a mentor, client, or teammate who can speak to the work firsthand.</p>
+        <div class="who"><span class="avatar"></span><div><strong>Name, Role</strong><span>Company</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="on-dark">
+  <div class="canvas-bg"></div>
+  <div class="wrap" style="position:relative;">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Frame — Contact</span>
+      <h2>Let's build something together</h2>
+      <p class="lede">Open to UI/UX and frontend roles, freelance projects, and good conversations about design.</p>
+    </div>
+    <div class="contact-grid">
+      <div data-reveal>
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:gsonika469@gmail.com">
+            <span class="ico">✉</span>
+            <div><strong>Email</strong><span>gsonika469@gmail.com</span></div>
+          </a>
+          <a class="contact-item" href="https://github.com/sonikaaagupta" target="_blank" rel="noopener">
+            <span class="ico">⌥</span>
+            <div><strong>GitHub</strong><span>github.com/sonikaaagupta</span></div>
+          </a>
+          <div class="contact-item" style="cursor:default;">
+            <span class="ico">📍</span>
+            <div><strong>Location</strong><span>Pune, Maharashtra, India</span></div>
+          </div>
+        </div>
+      </div>
+      <form class="form-card" id="contactForm" data-reveal novalidate>
+        <div class="field" id="fieldName">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <span class="err">Please enter your name.</span>
+        </div>
+        <div class="field" id="fieldEmail">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required>
+          <span class="err">Please enter a valid email address.</span>
+        </div>
+        <div class="field" id="fieldMessage">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+          <span class="err">Please add a short message.</span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+        
+        <div class="form-success" id="formSuccess"><span>✓</span> Thanks — your message has been queued. I'll reply soon.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <span>© <span id="year"></span> Sonika Gupta. Designed &amp; built frame by frame.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
