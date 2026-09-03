@@ -267,7 +267,7 @@ section.on-dark .btn-ghost:hover{ background:rgba(255,255,255,0.06); }
 .hero-board .layer.l3{ top:calc(34% + 40px); right:22px; width:44%; height:30%; background:rgba(255,255,255,0.04); }
 .hero-board .layer.l4{ top:calc(34% + 40px + 30% + 14px); right:22px; width:44%; bottom:22px; background:rgba(110,231,183,0.10); border-color:rgba(110,231,183,0.3); }
 .hero-board .tick{ position:absolute; font-family:var(--font-mono); font-size:10px; color:var(--slate); }
-.hero-board .tick.t1{ top:16px; left:26px; }
+.hero-board .tick.t1{ top:27px; left:26px; }
 .hero-board .tick.t2{ top:calc(34% + 46px); left:26px; }
 
 @media (max-width:900px){
@@ -336,7 +336,7 @@ section.on-dark .btn-ghost:hover{ background:rgba(255,255,255,0.06); }
 .skill-tags{ display:flex; flex-wrap:wrap; gap:9px; margin-top:36px; }
 .skill-tags .tag{
   font-family:var(--font-mono); font-size:12px; padding:8px 13px;
-  border:1px solid var(--line-dark); border-radius:8px; color:#c7c9db;
+  border:1px solid var(--line-dark); border-radius:8px; color:#8072dd;
 }
 
 @media (max-width:900px){ .skills-groups{ grid-template-columns:1fr; } }
