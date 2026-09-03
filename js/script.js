@@ -115,16 +115,17 @@
   }
 
   /* ---------- Contact form validation (front-end only) ---------- */
+  
   var form = document.getElementById('contactForm');
 var success = document.getElementById('formSuccess');
 
 if (form){
   var submitBtn = form.querySelector('.form-submit');
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(function(key){ return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]); })
-      .join("&");
+  function encode(data){
+    return Object.keys(data).map(function(key){
+      return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
+    }).join("&");
   }
 
   form.addEventListener('submit', function(e){
@@ -151,20 +152,17 @@ if (form){
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "contact",
+        "form-name": form.getAttribute('name'),
         name: name.value.trim(),
         email: email.value.trim(),
         message: message.value.trim()
       })
     })
     .then(function(response){
-      if (response.ok){
-        success.classList.add('show');
-        form.reset();
-        setTimeout(function(){ success.classList.remove('show'); }, 6000);
-      } else {
-        throw new Error('Network response was not ok');
-      }
+      if (!response.ok) throw new Error('Status ' + response.status);
+      success.classList.add('show');
+      form.reset();
+      setTimeout(function(){ success.classList.remove('show'); }, 6000);
     })
     .catch(function(error){
       console.error('Form submission error:', error);
