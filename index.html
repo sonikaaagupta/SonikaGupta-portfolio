@@ -376,54 +376,32 @@ Improved product focus by reducing clutter and emphasizing curated grids.</span>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="on-dark">
-  <div class="canvas-bg"></div>
-  <div class="wrap" style="position:relative;">
-    <div class="section-head" data-reveal>
-      <span class="eyebrow">Frame — Contact</span>
-      <h2>Let's build something together</h2>
-      <p class="lede">Open to UI/UX and frontend roles, freelance projects, and good conversations about design.</p>
-    </div>
-    <div class="contact-grid">
-      <div data-reveal>
-        <div class="contact-list">
-          <a class="contact-item" href="mailto:gsonika469@gmail.com">
-            <span class="ico">✉</span>
-            <div><strong>Email</strong><span>gsonika469@gmail.com</span></div>
-          </a>
-          <a class="contact-item" href="https://github.com/sonikaaagupta" target="_blank" rel="noopener">
-            <span class="ico">⌥</span>
-            <div><strong>GitHub</strong><span>github.com/sonikaaagupta</span></div>
-          </a>
-          <div class="contact-item" style="cursor:default;">
-            <span class="ico">📍</span>
-            <div><strong>Location</strong><span>Pune, Maharashtra, India</span></div>
-          </div>
-        </div>
-      </div>
-      <form class="form-card" id="contactForm" data-reveal novalidate>
-        <div class="field" id="fieldName">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-          <span class="err">Please enter your name.</span>
-        </div>
-        <div class="field" id="fieldEmail">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@company.com" required>
-          <span class="err">Please enter a valid email address.</span>
-        </div>
-        <div class="field" id="fieldMessage">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
-          <span class="err">Please add a short message.</span>
-        </div>
-        <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
-        
-        <div class="form-success" id="formSuccess"><span>✓</span> Thanks — your message has been queued. I'll reply soon.</div>
-      </form>
-    </div>
+<form class="form-card" id="contactForm" data-reveal novalidate
+      name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact">
+  <p style="display:none;">
+    <label>Don't fill this out: <input name="bot-field"></label>
+  </p>
+
+  <div class="field" id="fieldName">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+    <span class="err">Please enter your name.</span>
   </div>
-</section>
+  <div class="field" id="fieldEmail">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@company.com" required>
+    <span class="err">Please enter a valid email address.</span>
+  </div>
+  <div class="field" id="fieldMessage">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+    <span class="err">Please add a short message.</span>
+  </div>
+  <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+
+  <div class="form-success" id="formSuccess"><span>✓</span> Thanks — your message has been queued. I'll reply soon.</div>
+</form>
 
 <footer>
   <div class="wrap">
