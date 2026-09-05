@@ -379,7 +379,7 @@ section.on-dark .btn-ghost:hover{ background:rgba(255,255,255,0.06); }
 }
 
 /* ---------- Projects gallery ---------- */
-.gallery-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; }
+.gallery-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; padding-bottom: 35px }
 .gcard{
   border-radius:var(--radius); overflow:hidden; background:var(--ink);
   border:1px solid var(--line-dark); position:relative;

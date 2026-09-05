@@ -117,72 +117,72 @@
   /* ---------- Contact form validation (front-end only) ---------- */
   
   var form = document.getElementById('contactForm');
-var success = document.getElementById('formSuccess');
+  var success = document.getElementById('formSuccess');
 
-if (form){
-  var submitBtn = form.querySelector('.form-submit');
+  if (form){
+    var submitBtn = form.querySelector('.form-submit');
 
-  function encode(data){
-    return Object.keys(data).map(function(key){
-      return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
-    }).join("&");
-  }
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var name = document.getElementById('name');
-    var email = document.getElementById('email');
-    var message = document.getElementById('message');
-    var valid = true;
-
-    valid = validateField(name, name.value.trim().length > 0) && valid;
-    valid = validateField(email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) && valid;
-    valid = validateField(message, message.value.trim().length > 3) && valid;
-
-    if (!valid){
-      if (success) success.classList.remove('show');
-      return;
+    function encode(data){
+      return Object.keys(data).map(function(key){
+        return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
+      }).join("&");
     }
 
-    var originalText = submitBtn.textContent;
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('name');
+      var email = document.getElementById('email');
+      var message = document.getElementById('message');
+      var valid = true;
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute('name'),
-        name: name.value.trim(),
-        email: email.value.trim(),
-        message: message.value.trim()
+      valid = validateField(name, name.value.trim().length > 0) && valid;
+      valid = validateField(email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) && valid;
+      valid = validateField(message, message.value.trim().length > 3) && valid;
+
+      if (!valid){
+        if (success) success.classList.remove('show');
+        return;
+      }
+
+      var originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": form.getAttribute('name'),
+          name: name.value.trim(),
+          email: email.value.trim(),
+          message: message.value.trim()
+        })
       })
-    })
-    .then(function(response){
-      if (!response.ok) throw new Error('Status ' + response.status);
-      success.classList.add('show');
-      form.reset();
-      setTimeout(function(){ success.classList.remove('show'); }, 6000);
-    })
-    .catch(function(error){
-      console.error('Form submission error:', error);
-      alert('Something went wrong. Please email me directly at gsonika469@gmail.com');
-    })
-    .finally(function(){
-      submitBtn.disabled = false;
-      submitBtn.textContent = originalText;
-    });
-  });
-
-  [['name','fieldName'], ['email','fieldEmail'], ['message','fieldMessage']].forEach(function(pair){
-    var input = document.getElementById(pair[0]);
-    if (input){
-      input.addEventListener('input', function(){
-        document.getElementById(pair[1]).classList.remove('invalid');
+      .then(function(response){
+        if (!response.ok) throw new Error('Status ' + response.status);
+        success.classList.add('show');
+        form.reset();
+        setTimeout(function(){ success.classList.remove('show'); }, 6000);
+      })
+      .catch(function(error){
+        console.error('Form submission error:', error);
+        alert('Something went wrong. Please email me directly at gsonika469@gmail.com');
+      })
+      .finally(function(){
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
       });
-    }
-  });
-}
+    });
+
+    [['name','fieldName'], ['email','fieldEmail'], ['message','fieldMessage']].forEach(function(pair){
+      var input = document.getElementById(pair[0]);
+      if (input){
+        input.addEventListener('input', function(){
+          document.getElementById(pair[1]).classList.remove('invalid');
+        });
+      }
+    });
+  }
 
   function validateField(input, isValid){
     var wrap = input.closest('.field');
